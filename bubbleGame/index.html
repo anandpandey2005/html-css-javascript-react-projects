@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bubble</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+    </script>
+    <script>
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="panel">
+        <div id="ptop">
+          <div class="scorecard">
+            <h2>HIT</h2>
+            <div class="score" id="hit"></div>
+          </div>
+          <div class="scorecard">
+            <h2>TIMER</h2>
+            <div class="score" id="timer"></div>
+          </div>
+          <div class="scorecard">
+            <h2>SCORE</h2>
+            <div class="score" id="score"></div>
+          </div>
+        </div>
+        <div id="pbtm"></div>
+      </div>
+    </div>
+    <div id="refresh">
+      <div>
+        <a href="index.html"
+          ><img
+            src="https://play-lh.googleusercontent.com/1Wm-JD8IM_TSJ0r52b-XOw-bAOzyaRiicY4NNlV7ziAoJNtJTm56dLeNmoKq5qTwtzA"
+            alt="refresh"
+        /></a>
+      </div>
+      <footer>
+        <p>ANAND PANDEY &hearts;</p>
+        <a
+          href="https://www.linkedin.com/in/anand-pandey-4b83a6290/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BOR6jHEkvQDuXYdlCMSgZtw%3D%3D"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a
+        href="https://github.com/anandpandey2005"
+        target="_blank"
+        >Github</a
+      >
+        <a
+          href="https://x.com/05_anandpandey?t=0z6FpQ7dAIzMZ2-guo1EkQ&s=09"
+          target="_blank"
+          >Twitter</a
+        >
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
