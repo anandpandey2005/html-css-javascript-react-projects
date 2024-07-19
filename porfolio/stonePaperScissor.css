@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(45, 45, 126);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.image-container {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.message {
+    padding: 2rem;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    word-wrap: nowrap;
+    color: yellow;
+    background-color: black;
+}
+
+.computer-image {
+    animation: botshake 0.8s linear;
+}
+
+.player-image {
+    animation: usershake 0.8s linear;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point-container {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.computer-point, .player-point {
+    display: flex;
+}
+
+.user {
+    padding: 2rem;
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cmp-score, .ply-score {
+    min-width: 4rem;
+    max-width: 5rem;
+    min-height: 4rem;
+    max-height: 5rem;
+    padding: 2rem;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    text-align: center;
+    border: 2px solid rgb(185, 18, 18);
+    border-radius: 10px;
+    color: black;
+    background-color: yellow;
+}
+
+.ply-score {
+    background-color: whitesmoke;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-container {
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-radius: 10px;
+}
+
+.option {
+    padding: 1.5rem;
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    color: whitesmoke;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s all linear;
+    background-color: black;
+}
+
+.option:hover {
+    background-color: rgb(61, 21, 155);
+}
+
+@keyframes botshake {
+    0% { transform: rotate(-30deg); }
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(-30deg); }
+    75% { transform: rotate(30deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes usershake {
+    0% { transform: rotate(30deg); }
+    25% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+    75% { transform: rotate(-30deg); }
+    100% { transform: rotate(0deg); }
+}

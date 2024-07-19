@@ -1,0 +1,1 @@
+//alert("set desktop view Currently, I am working on making this site responsive.");
