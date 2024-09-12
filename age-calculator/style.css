@@ -1,0 +1,210 @@
+body {
+    background-color: #f9f6f6;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: hsl(195, 64%, 23%);
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: 0px 2px 35px rgb(74, 204, 204);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2, h3, h4 {
+    color: #c17f1c;
+    margin-top: 1em;
+}
+
+.calculator {
+    text-align: center;
+}
+
+.progress {
+    background-color: #333;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #c17f1c;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.progress span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+}
+
+.birth-date, .today-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.birth-date label, .today-date label {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.birth-date select, .birth-date input, .today-date select, .today-date input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.birth-date select, .today-date select {
+    width: 8em;
+}
+
+.birth-date input, .today-date input {
+    width: 6em;
+}
+
+#calculate-button {
+    background-color: #0e0d0d;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calculate-button:hover {
+    background-color:#ffffff;
+    color:  #030303;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.result-label {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.results span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.share button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.share button:hover {
+    background-color: #45a049;
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.fact-label {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.facts span {
+    font-size: 1em;
+}
+
+.description {
+    text-align: justify;
+}
+
+.description img {
+    max-width: 100%;
+    margin: 1em auto;
+    display: block;
+    border-radius: 10px;
+    
+}
+
+.description a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+.description ul {
+    list-style: disc;
+    padding-left: 2em;
+}

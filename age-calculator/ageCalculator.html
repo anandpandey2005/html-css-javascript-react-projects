@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age Calculator</h1>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2>Let's calculate age from your birthday & know how old am i.</h2>
+            <div class="progress">
+                <div class="progress-bar" style="width: 60%;"></div>
+                <span>60%</span>
+            </div>
+            <div class="birth-date">
+                <label for="day">Day:</label>
+                <select id="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <label for="month">Month:</label>
+                <select id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <label for="year">Year:</label>
+                <input type="number" id="year" value="1990">
+            </div>
+            <div class="today-date">
+                <label for="today-day">Today's Date:</label>
+                <select id="today-day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <label for="today-month">Month:</label>
+                <select id="today-month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <label for="today-year">Year:</label>
+                <input type="number" id="today-year" value="2024">
+            </div>
+            <button id="calculate-button">Calculate</button>
+        </section>
+        <section class="results">
+            <h3>Your Age Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Years:</span>
+                <span id="years"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Months:</span>
+                <span id="months"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Days:</span>
+                <span id="days"></span>
+            </div>
+            <h3>Your Age In Months Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Months:</span>
+                <span id="total-months"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Weeks:</span>
+                <span id="weeks"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Days:</span>
+                <span id="remaining-days"></span>
+            </div>
+            <h3>Your Age In Weeks Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Weeks:</span>
+                <span id="total-weeks"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Days:</span>
+                <span id="remaining-days-weeks"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Hours:</span>
+                <span id="hours"></span>
+            </div>
+            <h3>Your Age In Days Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Days:</span>
+                <span id="total-days"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Hours:</span>
+                <span id="remaining-hours"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Minutes:</span>
+                <span id="minutes"></span>
+            </div>
+            <h3>Your Age In Hours Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Hours:</span>
+                <span id="total-hours"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Minutes:</span>
+                <span id="remaining-minutes"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Seconds:</span>
+                <span id="seconds"></span>
+            </div>
+            <h3>Your Age In Minutes Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Minutes:</span>
+                <span id="total-minutes"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Seconds:</span>
+                <span id="remaining-seconds"></span>
+            </div>
+            <h3>Your Age In Seconds Is:</h3>
+            <div class="result-item">
+                <span class="result-label">Seconds:</span>
+                <span id="total-seconds"></span>
+            </div>
+            <div class="share">
+                <button id="copy-button">Copy it</button>
+                <button id="print-button">Print it</button>
+            </div>
+            <div class="facts">
+                <h4>Facts About You</h4>
+                <div class="fact-item">
+                    <span class="fact-label">You have taken breaths around:</span>
+                    <span id="breaths"></span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">You have spent time for eating & drinking around:</span>
+                    <span id="eating-drinking"></span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Your heart has beaten around:</span>
+                    <span id="heartbeats"></span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">You have eaten around:</span>
+                    <span id="food-eaten"></span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">You have slept around:</span>
+                    <span id="sleep-years"></span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">You have laughed around:</span>
+                    <span id="laughs"></span>
+                </div>
+            </div>
+        </section>
+        <section class="description">
+            <h2>Online Age Calculator: Calculate Age from Date of Birth🎂</h2>
+            <p>Are you one of the guys who used to ask - how old am I today? Well, We have built the best age calculator to calculate age from birthdate. One of the easiest yet essential things to do is calculate the age in months, weeks, days, hours, minutes, seconds. Not only these but also calculate taken breaths from the birth date. The age calculator we have listed on our platform is made so that it will show you the exact number of days you've been born into this planet. Using an online age calculator has become relatively easy. This tool is trusted and gives you an accurate result.</p>
+            <p>People usually stumble upon many shady sites, which will not show them accurate results. But, while developing the online age calculator, we give priority to the customer's service. In this tool, we decided to merge lots of additional features. Like you can compare your age with your friends, family members or loved ones. You can instantly share these results on FB, Instagram, etc., to start a new trend among the buddies.</p>
+            <img src="https://th.bing.com/th/id/OIP.BwhM1DTuZU6g_ZvkF0aT6gAAAA?rs=1&pid=ImgDetMain" alt="Calculator">
+            <p>Using an age calculator is quite fun, and as of now, you must have got an idea of how to use it. Still, in this article, we shared everything in detail about it. How the mechanism of aging works and how this online age calculator is made based upon it. You can also try <a href="#">Chronological Age Calculator</a>.</p>
+            <h3>What's The Meaning Of Age Calculator?</h3>
+            <p>The age calculator is used to determine the age of everyone by birth date. You can check the age in terms of years, months, days by using the age calculator. It will calculate the age using the essential input like the date of birth (DOB) and fetch the information about your age. You can see how many years old you are in terms of years, months, days.</p>
+            <p>Modern age calculators are made using various features to show you the various comparison charts about different persons. You can check the age of any person by inserting the DOB information, and it will present you with the required output in just a few minutes.</p>
+            <h3>How Can I Calculate Age By Using Age Calculator Pearson?</h3>
+            <p>Date of birth (DOB) is the only necessary information you need to insert to check the age. The format would be by default, and you will be asked to enter the day, month, and year of you getting born. It will then fetch the information and calculate how many days it's been on this planet earth.</p>
+            <p>The recent features added to the age calculator are exciting because they can show you the age in terms of days, months, years, hours, or even minutes. Getting how many hours you have spent on this planet is the type of thing that will help you realize the importance of having a purpose in life.</p>
+            <ul>
+                <li>Enter the DOB information in day/month/year.</li>
+                <li>Then click on the submit option.</li>
+                <li>Wait a few seconds and get the result.</li>
+            </ul>
+            <h3>Can Age Calculator Give You Information About The Age Difference?</h3>
+            <p>YES. It can calculate the age of multiple persons at one time and gives you information about the age difference. For example:- if you enter John's date of birth and for comparison, you enter Steve's date of birth, then it will calculate the age difference instantly. You will know how many years, months, or even days of difference between these two guys' age.</p>
+            <p>People who are into mathematical problems can use this online calculator of age because it can show you the data correctly and saves time.</p>
+            <h3>What's The Culture Of Counting Years In Aging?</h3>
+            <p>It's different in every corner of the world. But, since we are a Gregorian calendar, which is universally accepted and used by millions of people to calculate the age or number of days, you can rely upon this information.</p>
+            <p>Some cultures do not like to include the current year while determining a person's age. For example, in many Asian countries, people's age is calculated by excluding their current running age. If you've entered into 26th year, you will be 25 years old only and not as 26th.</p>
+            <p>Some cultures believe people get born at one age, and it might sound freaking, but there is a logic behind it. Chinese people celebrate their new year on a different day, and if the baby is born just days before the new year's even, then the baby would be termed as age one even though he/she bore only two days ago.</p>
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <p>Here are some of the most recent questions asked by the users, which we decided to answer briefly.</p>
+            <h4>How Does An Age Calculator Work?</h4>
+            <p>It works on a mathematical formula, which requires input in the form of date of birth (DOB), and it will calculate the number of days based upon the configurations you have set on it.</p>
+            <h4>Does the age calculator show age in hours, minutes?</h4>
+            <p>YES. It can calculate the number of days, minutes you have spent since you're born on this planet and gives you exact data about it.</p>
+            <h4>Can it check the age of another person?</h4>
+            <p>YES, you need to put the DOB information, and it will calculate that person's age accordingly.</p>
+            <h4>Can I save the information shown on the age calculator?</h4>
+            <p>Yes, you can get the required information in the default format. If you want to save it for later use, we recommend taking a picture of it or screenshot the desktop screen results. You can share the results directly with your friends by clicking on the share option also.</p>
+            <h3>Conclusion</h3>
+            <p>So this is how you can use the age calculator to determine a person's age. When you are using an age calculator, make sure you enter the information about the date of birth correctly. Usually, people have been emailing us about its mechanism when they don't know that the input will have to be inserted from their side.</p>
+            <p>This online age calculator will save lots of time and effort when comparing the information, so enter the information that will ultimately help you know what's age yours. If you are having any trouble using this platform, you can contact us, and we will be glad to help you out.</p>
+            <p>Copyright. 2024. Age Calculator</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
